@@ -1,0 +1,13 @@
+apiVersion: serving.kserve.io/v1beta1
+kind: InferenceService
+metadata:
+  name: fff-sk-learn-random-forest-reg
+  namespace: helix-fff
+spec:
+  predictor:
+    model:
+      modelFormat:
+        name: sklearn
+      runtime: kserve-mlserver
+      storageUri: s3://ea94b05c-07be-41ff-881f-7c1538250a93/0/709933273d2e4177a9edf4cbdc4cdd3f/artifacts/model
+    serviceAccountName: fff-sk-learn-random-forest-reg
