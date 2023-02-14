@@ -1,0 +1,13 @@
+apiVersion: serving.kserve.io/v1beta1
+kind: InferenceService
+metadata:
+  name: fff-stable-diffusion
+  namespace: helix-fff
+spec:
+  predictor:
+    model:
+      modelFormat:
+        name: sklearn
+      runtime: kserve-mlserver
+      storageUri: s3://ea94b05c-07be-41ff-881f-7c1538250a93/1/701a681a51dc414fbbfc1354f240457a/artifacts/stable-diffusion
+    serviceAccountName: fff-stable-diffusion
