@@ -9,5 +9,5 @@ spec:
       modelFormat:
         name: sklearn
       runtime: kserve-mlserver
-      storageUri: s3://ea94b05c-07be-41ff-881f-7c1538250a93/0/709933273d2e4177a9edf4cbdc4cdd3f/artifacts/model
+      storageUri: s3://4096988a-e589-43bc-8ac6-9cc94fb795bc/0/e5fc69bb42cf4673b711fb3cb6106ec3/artifacts/model
     serviceAccountName: fff-sk-learn-random-forest-reg
